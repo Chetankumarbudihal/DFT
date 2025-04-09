@@ -1,0 +1,583 @@
+[04/08 15:40:07      0s] 
+[04/08 15:40:07      0s] Cadence Tempus(TM) Timing Signoff Solution.
+[04/08 15:40:07      0s] Copyright 2020 Cadence Design Systems, Inc. All rights reserved worldwide.
+[04/08 15:40:07      0s] 
+[04/08 15:40:07      0s] Version:	v20.20-p001_1, built Wed Dec 2 16:07:28 PST 2020
+[04/08 15:40:07      0s] Options:	
+[04/08 15:40:07      0s] Date:		Tue Apr  8 15:40:07 2025
+[04/08 15:40:07      0s] Host:		APL4.kletech.ac.in (x86_64 w/Linux 4.18.0-425.3.1.el8.x86_64) (6cores*12cpus*12th Gen Intel(R) Core(TM) i5-12500 18432KB)
+[04/08 15:40:07      0s] OS:		Red Hat Enterprise Linux release 8.7 (Ootpa)
+[04/08 15:40:07      0s] 
+[04/08 15:40:07      0s] License:
+[04/08 15:40:08      0s] 		tpsxl	Tempus Timing Signoff Solution XL	20.2	checkout succeeded
+[04/08 15:40:08      0s] 		16 CPU jobs allowed with the current license(s). Use set_multi_cpu_usage to set your required CPU count.
+[04/08 15:40:15      5s] @(#)CDS: Tempus Timing Signoff Solution v20.20-p001_1 (64bit) 12/02/2020 16:07 (Linux 2.6.32-431.11.2.el6.x86_64)
+[04/08 15:40:15      5s] @(#)CDS: NanoRoute 20.20-p001_1 NR200917-0125/MT (database version 18.20.530) {superthreading v2.11}
+[04/08 15:40:15      5s] @(#)CDS: AAE 20.20-p005 (64bit) 12/02/2020 (Linux 2.6.32-431.11.2.el6.x86_64)
+[04/08 15:40:15      5s] @(#)CDS: CTE 20.20-p010_1 () Dec  2 2020 14:35:30 ( )
+[04/08 15:40:15      5s] @(#)CDS: SYNTECH 20.20-p001_1 () Nov 24 2020 02:28:20 ( )
+[04/08 15:40:15      5s] @(#)CDS: CPE v20.20-p009
+[04/08 15:40:15      5s] @(#)CDS: OA 22.60-s011 Tue Jun 16 12:27:00 2020
+[04/08 15:40:15      5s] @(#)CDS: SGN 20.10-d001 (01-Jun-2020) (64 bit executable, Qt5.9.0)
+[04/08 15:40:15      5s] @(#)CDS: RCDB 11.15.0
+[04/08 15:40:15      5s] @(#)CDS: STYLUS 21.10-d018_1 (08/28/2020 09:14 PDT)
+[04/08 15:40:15      5s] Change the soft stacksize limit to 0.2%RAM (63 mbytes). Set global soft_stack_size_limit to change the value.
+[04/08 15:40:15      6s] **INFO: (TMPDIR-1001): The environment variable TMPDIR is not set.
+Create and set the environment variable TMPDIR to '/tmp/ssv_tmpdir_126865_H10D2L'.
+environment variable TMPDIR is '/tmp/ssv_tmpdir_126865_H10D2L'.
+[04/08 15:44:55     23s] <CMD> read_lib ../NangateOpenCellLibrary_slow_conditional_ccs.lib
+[04/08 15:44:55     24s] <CMD> read_lib -lef ../NANOCL.lef
+[04/08 15:44:56     24s] <CMD> read_verilog ../momal_scan.v
+[04/08 15:44:56     24s] <CMD> set_top_module
+[04/08 15:44:56     24s] #% Begin Load MMMC data ... (date=04/08 15:44:56, mem=756.7M)
+[04/08 15:44:56     24s] Number of views requested 1 are allowed with the current licenses... continuing with set_analysis_view.
+[04/08 15:44:56     24s] #% End Load MMMC data ... (date=04/08 15:44:56, total cpu=0:00:00.0, real=0:00:00.0, peak res=757.2M, current mem=757.2M)
+[04/08 15:44:56     24s] 
+[04/08 15:44:56     24s] Loading LEF file ../NANOCL.lef ...
+[04/08 15:44:56     24s] Set DBUPerIGU to M2 pitch 380.
+[04/08 15:44:56     24s] 
+[04/08 15:44:56     24s] viaInitial starts at Tue Apr  8 15:44:56 2025
+viaInitial ends at Tue Apr  8 15:44:56 2025
+
+##  Check design process and node:  
+##  Both design process and tech node are not set.
+
+[04/08 15:44:56     24s] Loading view definition file from .ssv_emulate_view_definition_126865.tcl
+[04/08 15:44:56     24s] Reading default_emulate_libset_max timing library '/home/01fe21bec086/Documents/momal/NangateOpenCellLibrary_slow_conditional_ccs.lib' ...
+[04/08 15:44:56     24s] Read 134 cells in library 'NangateOpenCellLibrary' 
+[04/08 15:44:56     24s] Ending "PreSetAnalysisView" (total cpu=0:00:00.6, real=0:00:00.0, peak res=892.1M, current mem=809.9M)
+[04/08 15:44:56     24s] *** End library_loading (cpu=0.01min, real=0.00min, mem=35.0M, fe_cpu=0.42min, fe_real=4.82min, fe_mem=854.0M) ***
+[04/08 15:44:56     24s] #% Begin Load netlist data ... (date=04/08 15:44:56, mem=809.9M)
+[04/08 15:44:56     25s] *** Begin netlist parsing (mem=854.0M) ***
+[04/08 15:44:56     25s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR2_X2' is defined in LEF but not in the timing library.
+[04/08 15:44:56     25s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR2_X2' is defined in LEF but not in the timing library.
+[04/08 15:44:56     25s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR2_X1' is defined in LEF but not in the timing library.
+[04/08 15:44:56     25s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR2_X1' is defined in LEF but not in the timing library.
+[04/08 15:44:56     25s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XNOR2_X2' is defined in LEF but not in the timing library.
+[04/08 15:44:56     25s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XNOR2_X2' is defined in LEF but not in the timing library.
+[04/08 15:44:56     25s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XNOR2_X1' is defined in LEF but not in the timing library.
+[04/08 15:44:56     25s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XNOR2_X1' is defined in LEF but not in the timing library.
+[04/08 15:44:56     25s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'TLAT_X1' is defined in LEF but not in the timing library.
+[04/08 15:44:56     25s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'TLAT_X1' is defined in LEF but not in the timing library.
+[04/08 15:44:56     25s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'TINV_X1' is defined in LEF but not in the timing library.
+[04/08 15:44:56     25s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'TINV_X1' is defined in LEF but not in the timing library.
+[04/08 15:44:56     25s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'TBUF_X8' is defined in LEF but not in the timing library.
+[04/08 15:44:56     25s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'TBUF_X8' is defined in LEF but not in the timing library.
+[04/08 15:44:56     25s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'TBUF_X4' is defined in LEF but not in the timing library.
+[04/08 15:44:56     25s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'TBUF_X4' is defined in LEF but not in the timing library.
+[04/08 15:44:56     25s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'TBUF_X2' is defined in LEF but not in the timing library.
+[04/08 15:44:56     25s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'TBUF_X2' is defined in LEF but not in the timing library.
+[04/08 15:44:56     25s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'TBUF_X16' is defined in LEF but not in the timing library.
+[04/08 15:44:56     25s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'TBUF_X16' is defined in LEF but not in the timing library.
+[04/08 15:44:56     25s] **WARN: (EMS-62):	Message <IMPVL-159> has exceeded the default message display limit of 20.
+[04/08 15:44:56     25s] To avoid this warning, increase the display limit per unique message by
+[04/08 15:44:56     25s] using the set_message -limit <number> command.
+[04/08 15:44:56     25s] The message limit can be removed by using the set_message -no_limit command.
+[04/08 15:44:56     25s] Note that setting a very large number using the set_message -limit command
+[04/08 15:44:56     25s] or removing the message limit using the set_message -no_limit command can
+[04/08 15:44:56     25s] significantly increase the log file size.
+[04/08 15:44:56     25s] To suppress a message, use the set_message -suppress command.
+[04/08 15:44:56     25s] Reading verilog netlist '../momal_scan.v'
+[04/08 15:44:57     25s] 
+[04/08 15:44:57     25s] *** Memory Usage v#1 (Current mem = 1002.043M, initial mem = 299.711M) ***
+[04/08 15:44:57     25s] *** End netlist parsing (cpu=0:00:00.3, real=0:00:01.0, mem=1002.0M) ***
+[04/08 15:44:57     25s] #% End Load netlist data ... (date=04/08 15:44:57, total cpu=0:00:00.4, real=0:00:01.0, peak res=923.2M, current mem=905.7M)
+[04/08 15:44:57     25s] Top level cell is momal.
+[04/08 15:44:57     25s] Starting consistency checks on late and early library sets of delay corner 'default_emulate_delay_corner'
+[04/08 15:44:57     25s] late library set: default_emulate_libset_max
+[04/08 15:44:57     25s] early library set: default_emulate_libset_min
+[04/08 15:44:57     25s] Completed consistency checks. Status: Successful
+[04/08 15:44:57     25s] Starting consistency checks on late and early library sets of delay corner 'default_emulate_delay_corner'
+[04/08 15:44:57     25s] late library set: default_emulate_libset_max
+[04/08 15:44:57     25s] early library set: default_emulate_libset_min
+[04/08 15:44:57     25s] Completed consistency checks. Status: Successful
+[04/08 15:44:57     25s] Ending "BindLib:" (total cpu=0:00:00.0, real=0:00:00.0, peak res=932.1M, current mem=932.1M)
+[04/08 15:44:57     25s] Building hierarchical netlist for Cell momal ...
+[04/08 15:44:57     25s] *** Netlist is unique.
+[04/08 15:44:57     25s] Setting Std. cell height to 2800 DBU (smallest netlist inst).
+[04/08 15:44:57     25s] ** info: there are 135 modules.
+[04/08 15:44:57     25s] ** info: there are 57579 stdCell insts.
+[04/08 15:44:57     25s] 
+[04/08 15:44:57     25s] *** Memory Usage v#1 (Current mem = 1223.988M, initial mem = 299.711M) ***
+[04/08 15:44:57     25s] Generated pitch 1.68 in metal10 is different from 1.6 defined in technology file in preferred direction.
+[04/08 15:44:57     25s] Generated pitch 0.84 in metal9 is different from 1.6 defined in technology file in unpreferred direction.
+[04/08 15:44:57     25s] Generated pitch 0.84 in metal8 is different from 0.8 defined in technology file in unpreferred direction.
+[04/08 15:44:57     25s] Generated pitch 0.84 in metal8 is different from 0.8 defined in technology file in preferred direction.
+[04/08 15:44:57     25s] Generated pitch 0.28 in metal7 is different from 0.8 defined in technology file in unpreferred direction.
+[04/08 15:44:57     25s] Generated pitch 0.84 in metal7 is different from 0.8 defined in technology file in preferred direction.
+[04/08 15:44:57     25s] Generated pitch 0.14 in metal4 is different from 0.28 defined in technology file in unpreferred direction.
+[04/08 15:44:57     25s] Set Default Net Delay as 1000 ps.
+[04/08 15:44:57     25s] Set Default Net Load as 0.5 pF. 
+[04/08 15:44:57     25s] Set Default Input Pin Transition as 0.1 ps.
+[04/08 15:44:57     25s] Extraction setup Started 
+[04/08 15:44:57     25s] Summary of Active RC-Corners : 
+[04/08 15:44:57     25s]  
+[04/08 15:44:57     25s]  Analysis View: default_emulate_view
+[04/08 15:44:57     25s]     RC-Corner Name        : default_emulate_rc_corner
+[04/08 15:44:57     25s]     RC-Corner Index       : 0
+[04/08 15:44:57     25s]     RC-Corner Temperature : 25 Celsius
+[04/08 15:44:57     25s]     RC-Corner Cap Table   : ''
+[04/08 15:44:57     25s]     RC-Corner PostRoute Res Factor        : 1
+[04/08 15:44:57     25s]     RC-Corner PostRoute Cap Factor        : 1
+[04/08 15:44:57     25s]     RC-Corner PostRoute XCap Factor       : 1
+[04/08 15:44:57     25s] LayerId::1 widthSet size::1
+[04/08 15:44:57     25s] LayerId::2 widthSet size::1
+[04/08 15:44:57     25s] LayerId::3 widthSet size::1
+[04/08 15:44:57     25s] LayerId::4 widthSet size::1
+[04/08 15:44:57     25s] LayerId::5 widthSet size::1
+[04/08 15:44:57     25s] LayerId::6 widthSet size::1
+[04/08 15:44:57     25s] LayerId::7 widthSet size::1
+[04/08 15:44:57     25s] LayerId::8 widthSet size::1
+[04/08 15:44:57     25s] LayerId::9 widthSet size::1
+[04/08 15:44:57     25s] LayerId::10 widthSet size::1
+[04/08 15:44:57     25s] Initializing multi-corner resistance tables ...
+[04/08 15:44:57     25s] Preroute length aware model : n: 40 ; LLS: 2-3 ; HLS: 3-5 ; rDens: 0.000000 ; uaWl: 0.000000 ; uaWlH: 0.000000 ; aWlH: 0.000000 ; Pmax: 0.850000 ; wcR: 0.000000 ; newSi: 0.000000 ; pMod: 82 ; 
+[04/08 15:44:57     25s] Starting consistency checks on late and early library sets of delay corner 'default_emulate_delay_corner'
+[04/08 15:44:57     25s] late library set: default_emulate_libset_max
+[04/08 15:44:57     25s] early library set: default_emulate_libset_min
+[04/08 15:44:57     25s] Completed consistency checks. Status: Successful
+[04/08 15:44:57     25s] Ending "SetAnalysisView" (total cpu=0:00:00.0, real=0:00:00.0, peak res=1410.9M, current mem=1205.3M)
+[04/08 15:44:57     25s] Reading timing constraints file '/dev/null' ...
+[04/08 15:44:57     25s] Current (total cpu=0:00:25.8, real=0:04:50, peak res=1423.1M, current mem=1423.1M)
+[04/08 15:44:57     25s] Tech dependent Parameter, Build TLibAnalyzer for: cellAreaConsiderPadding
+[04/08 15:44:57     25s] Creating Cell Server ...(0, 1, 1, 1)
+[04/08 15:44:57     25s] Summary for sequential cells identification: 
+[04/08 15:44:57     25s]   Identified SBFF number: 16
+[04/08 15:44:57     25s]   Identified MBFF number: 0
+[04/08 15:44:57     25s]   Identified SB Latch number: 0
+[04/08 15:44:57     25s]   Identified MB Latch number: 0
+[04/08 15:44:57     25s]   Not identified SBFF number: 0
+[04/08 15:44:57     25s]   Not identified MBFF number: 0
+[04/08 15:44:57     25s]   Not identified SB Latch number: 0
+[04/08 15:44:57     25s]   Not identified MB Latch number: 0
+[04/08 15:44:57     25s]   Number of sequential cells which are not FFs: 13
+[04/08 15:44:57     25s] Total number of combinational cells: 99
+[04/08 15:44:57     25s] Total number of sequential cells: 29
+[04/08 15:44:57     25s] Total number of tristate cells: 6
+[04/08 15:44:57     25s] Total number of level shifter cells: 0
+[04/08 15:44:57     25s] Total number of power gating cells: 0
+[04/08 15:44:57     25s] Total number of isolation cells: 0
+[04/08 15:44:57     25s] Total number of power switch cells: 0
+[04/08 15:44:57     25s] Total number of pulse generator cells: 0
+[04/08 15:44:57     25s] Total number of always on buffers: 0
+[04/08 15:44:57     25s] Total number of retention cells: 0
+[04/08 15:44:57     25s] List of usable buffers: BUF_X2 BUF_X1 BUF_X4 BUF_X8 CLKBUF_X1 CLKBUF_X3 CLKBUF_X2
+[04/08 15:44:57     25s] Total number of usable buffers: 7
+[04/08 15:44:57     25s] List of unusable buffers:
+[04/08 15:44:57     25s] Total number of unusable buffers: 0
+[04/08 15:44:57     25s] List of usable inverters: INV_X2 INV_X1 INV_X16 INV_X32 INV_X4 INV_X8
+[04/08 15:44:57     25s] Total number of usable inverters: 6
+[04/08 15:44:57     25s] List of unusable inverters:
+[04/08 15:44:57     25s] Total number of unusable inverters: 0
+[04/08 15:44:57     25s] List of identified usable delay cells: BUF_X16 BUF_X32
+[04/08 15:44:57     25s] Total number of identified usable delay cells: 2
+[04/08 15:44:57     25s] List of identified unusable delay cells:
+[04/08 15:44:57     25s] Total number of identified unusable delay cells: 0
+[04/08 15:44:57     25s] Creating Cell Server, finished. 
+[04/08 15:44:57     25s] 
+[04/08 15:44:57     25s] Deleting Cell Server ...
+[04/08 15:44:57     25s] Ending "Cell type marking" (total cpu=0:00:00.0, real=0:00:00.0, peak res=1452.9M, current mem=1452.9M)
+[04/08 15:44:57     25s] Creating Cell Server ...(0, 0, 0, 0)
+[04/08 15:44:57     25s] Summary for sequential cells identification: 
+[04/08 15:44:57     25s]   Identified SBFF number: 16
+[04/08 15:44:57     25s]   Identified MBFF number: 0
+[04/08 15:44:57     25s]   Identified SB Latch number: 0
+[04/08 15:44:57     25s]   Identified MB Latch number: 0
+[04/08 15:44:57     25s]   Not identified SBFF number: 0
+[04/08 15:44:57     25s]   Not identified MBFF number: 0
+[04/08 15:44:57     25s]   Not identified SB Latch number: 0
+[04/08 15:44:57     25s]   Not identified MB Latch number: 0
+[04/08 15:44:57     25s]   Number of sequential cells which are not FFs: 13
+[04/08 15:44:57     25s]  Visiting view : default_emulate_view
+[04/08 15:44:57     25s]    : PowerDomain = none : Weighted F : unweighted  = 45.30 (1.000) with rcCorner = 0
+[04/08 15:44:57     25s]    : PowerDomain = none : Weighted F : unweighted  = 28.40 (1.000) with rcCorner = -1
+[04/08 15:44:57     25s]  Visiting view : default_emulate_view
+[04/08 15:44:57     25s]    : PowerDomain = none : Weighted F : unweighted  = 45.30 (1.000) with rcCorner = 0
+[04/08 15:44:57     25s]    : PowerDomain = none : Weighted F : unweighted  = 28.40 (1.000) with rcCorner = -1
+[04/08 15:44:57     25s] Creating Cell Server, finished. 
+[04/08 15:44:57     25s] 
+[04/08 15:44:57     25s] Extraction setup Started 
+[04/08 15:44:57     25s] Summary of Active RC-Corners : 
+[04/08 15:44:57     25s]  
+[04/08 15:44:57     25s]  Analysis View: default_emulate_view
+[04/08 15:44:57     25s]     RC-Corner Name        : default_emulate_rc_corner
+[04/08 15:44:57     25s]     RC-Corner Index       : 0
+[04/08 15:44:57     25s]     RC-Corner Temperature : 125 Celsius
+[04/08 15:44:57     25s]     RC-Corner Cap Table   : ''
+[04/08 15:44:57     25s]     RC-Corner PostRoute Res Factor        : 1
+[04/08 15:44:57     25s]     RC-Corner PostRoute Cap Factor        : 1
+[04/08 15:44:57     25s]     RC-Corner PostRoute XCap Factor       : 1
+[04/08 15:44:57     25s] LayerId::1 widthSet size::1
+[04/08 15:44:57     25s] LayerId::2 widthSet size::1
+[04/08 15:44:57     25s] LayerId::3 widthSet size::1
+[04/08 15:44:57     25s] LayerId::4 widthSet size::1
+[04/08 15:44:57     25s] LayerId::5 widthSet size::1
+[04/08 15:44:57     25s] LayerId::6 widthSet size::1
+[04/08 15:44:57     25s] LayerId::7 widthSet size::1
+[04/08 15:44:57     25s] LayerId::8 widthSet size::1
+[04/08 15:44:57     25s] LayerId::9 widthSet size::1
+[04/08 15:44:57     25s] LayerId::10 widthSet size::1
+[04/08 15:44:57     25s] Initializing multi-corner resistance tables ...
+[04/08 15:44:57     25s] Preroute length aware model : n: 40 ; LLS: 2-3 ; HLS: 3-5 ; rDens: 0.000000 ; uaWl: 0.000000 ; uaWlH: 0.000000 ; aWlH: 0.000000 ; Pmax: 0.850000 ; wcR: 0.000000 ; newSi: 0.000000 ; pMod: 82 ; 
+[04/08 15:44:57     25s] Extraction setup Started 
+[04/08 15:44:57     25s] Summary of Active RC-Corners : 
+[04/08 15:44:57     25s]  
+[04/08 15:44:57     25s]  Analysis View: default_emulate_view
+[04/08 15:44:57     25s]     RC-Corner Name        : default_emulate_rc_corner
+[04/08 15:44:57     25s]     RC-Corner Index       : 0
+[04/08 15:44:57     25s]     RC-Corner Temperature : 125 Celsius
+[04/08 15:44:57     25s]     RC-Corner Cap Table   : ''
+[04/08 15:44:57     25s]     RC-Corner PostRoute Res Factor        : 1
+[04/08 15:44:57     25s]     RC-Corner PostRoute Cap Factor        : 1
+[04/08 15:44:57     25s]     RC-Corner PostRoute XCap Factor       : 1
+[04/08 15:44:57     25s] LayerId::1 widthSet size::1
+[04/08 15:44:57     25s] LayerId::2 widthSet size::1
+[04/08 15:44:57     25s] LayerId::3 widthSet size::1
+[04/08 15:44:57     25s] LayerId::4 widthSet size::1
+[04/08 15:44:57     25s] LayerId::5 widthSet size::1
+[04/08 15:44:57     25s] LayerId::6 widthSet size::1
+[04/08 15:44:57     25s] LayerId::7 widthSet size::1
+[04/08 15:44:57     25s] LayerId::8 widthSet size::1
+[04/08 15:44:57     25s] LayerId::9 widthSet size::1
+[04/08 15:44:57     25s] LayerId::10 widthSet size::1
+[04/08 15:44:57     25s] Initializing multi-corner resistance tables ...
+[04/08 15:44:57     25s] Preroute length aware model : n: 40 ; LLS: 2-3 ; HLS: 3-5 ; rDens: 0.000000 ; uaWl: 0.000000 ; uaWlH: 0.000000 ; aWlH: 0.000000 ; Pmax: 0.850000 ; wcR: 0.000000 ; newSi: 0.000000 ; pMod: 82 ; 
+[04/08 15:44:57     25s] Extraction setup Started 
+[04/08 15:44:57     25s] Summary of Active RC-Corners : 
+[04/08 15:44:57     25s]  
+[04/08 15:44:57     25s]  Analysis View: default_emulate_view
+[04/08 15:44:57     25s]     RC-Corner Name        : default_emulate_rc_corner
+[04/08 15:44:57     25s]     RC-Corner Index       : 0
+[04/08 15:44:57     25s]     RC-Corner Temperature : 125 Celsius
+[04/08 15:44:57     25s]     RC-Corner Cap Table   : ''
+[04/08 15:44:57     25s]     RC-Corner PostRoute Res Factor        : 1
+[04/08 15:44:57     25s]     RC-Corner PostRoute Cap Factor        : 1
+[04/08 15:44:57     25s]     RC-Corner PostRoute XCap Factor       : 1
+[04/08 15:44:57     25s] LayerId::1 widthSet size::1
+[04/08 15:44:57     25s] LayerId::2 widthSet size::1
+[04/08 15:44:57     25s] LayerId::3 widthSet size::1
+[04/08 15:44:57     25s] LayerId::4 widthSet size::1
+[04/08 15:44:57     25s] LayerId::5 widthSet size::1
+[04/08 15:44:57     25s] LayerId::6 widthSet size::1
+[04/08 15:44:57     25s] LayerId::7 widthSet size::1
+[04/08 15:44:57     25s] LayerId::8 widthSet size::1
+[04/08 15:44:57     25s] LayerId::9 widthSet size::1
+[04/08 15:44:57     25s] LayerId::10 widthSet size::1
+[04/08 15:44:57     25s] Initializing multi-corner resistance tables ...
+[04/08 15:44:57     25s] Preroute length aware model : n: 40 ; LLS: 2-3 ; HLS: 3-5 ; rDens: 0.000000 ; uaWl: 0.000000 ; uaWlH: 0.000000 ; aWlH: 0.000000 ; Pmax: 0.850000 ; wcR: 0.000000 ; newSi: 0.000000 ; pMod: 82 ; 
+[04/08 15:44:57     26s] <CMD> read_def ../momal_scan_def.def
+[04/08 15:44:57     26s] Reading DEF file '../momal_scan_def.def', current time is Tue Apr  8 15:44:57 2025 ...
+[04/08 15:44:57     26s] --- DIVIDERCHAR '/'
+[04/08 15:44:57     26s] **WARN: (IMPDF-64):	UnitsPerDBU is not unity (you may have rounding problems).
+[04/08 15:44:57     26s] --- UnitsPerDBU = 0.5000
+[04/08 15:44:57     26s] defIn read 10000 lines...
+[04/08 15:44:57     26s] DEF file '../momal_scan_def.def' is parsed, current time is Tue Apr  8 15:44:57 2025.
+[04/08 15:45:10     27s] *** Scan Trace Summary (runtime: cpu: 0:00:00.0 , real: 0:00:00.0): 
+[04/08 15:45:10     27s] Successfully traced 75 scan chains (total 14554 scan bits).
+[04/08 15:45:10     27s] Start applying DEF ordered sections ...
+[04/08 15:45:10     27s] **WARN: (IMPSC-1138):	In scan chain "chain1_sub0" DEF ordered section, buffers or logics following scan instance "tiki_U37_reg_53" are corrected to match the netlist.
+[04/08 15:45:10     27s] **WARN: (IMPSC-1138):	In scan chain "chain1_sub0" DEF ordered section, buffers or logics following scan instance "tiki_U37_reg_63" are corrected to match the netlist.
+[04/08 15:45:10     27s] **WARN: (IMPSC-1138):	In scan chain "chain1_sub0" DEF ordered section, buffers or logics following scan instance "tiki_U37_reg_124" are corrected to match the netlist.
+[04/08 15:45:10     27s] **WARN: (IMPSC-1138):	In scan chain "chain2_sub0" DEF ordered section, buffers or logics following scan instance "tiki_U37_reg_121" are corrected to match the netlist.
+[04/08 15:45:10     27s] **WARN: (IMPSC-1138):	In scan chain "chain3_sub0" DEF ordered section, buffers or logics following scan instance "tiki_U37_reg_118" are corrected to match the netlist.
+[04/08 15:45:10     27s] **WARN: (IMPSC-1138):	In scan chain "chain3_sub0" DEF ordered section, buffers or logics following scan instance "tiki_U37_reg_188" are corrected to match the netlist.
+[04/08 15:45:10     27s] **WARN: (IMPSC-1138):	In scan chain "chain4_sub0" DEF ordered section, buffers or logics following scan instance "tiki_U37_reg_185" are corrected to match the netlist.
+[04/08 15:45:10     27s] **WARN: (IMPSC-1138):	In scan chain "chain4_sub0" DEF ordered section, buffers or logics following scan instance "U300_reg" are corrected to match the netlist.
+[04/08 15:45:10     27s] **WARN: (IMPSC-1138):	In scan chain "chain5_sub0" DEF ordered section, buffers or logics following scan instance "tiki_U21_reg_250" are corrected to match the netlist.
+[04/08 15:45:10     27s] **WARN: (IMPSC-1138):	In scan chain "chain5_sub0" DEF ordered section, buffers or logics following scan instance "tiki_U37_reg_190" are corrected to match the netlist.
+[04/08 15:45:10     27s] **WARN: (IMPSC-1138):	In scan chain "chain6_sub0" DEF ordered section, buffers or logics following scan instance "U361_reg" are corrected to match the netlist.
+[04/08 15:45:10     27s] **WARN: (IMPSC-1138):	In scan chain "chain7_sub0" DEF ordered section, buffers or logics following scan instance "tiki_U37_reg_116" are corrected to match the netlist.
+[04/08 15:45:10     27s] **WARN: (IMPSC-1138):	In scan chain "chain8_sub0" DEF ordered section, buffers or logics following scan instance "U436_reg_1" are corrected to match the netlist.
+[04/08 15:45:10     27s] **WARN: (IMPSC-1138):	In scan chain "chain8_sub0" DEF ordered section, buffers or logics following scan instance "tiki_U37_reg_126" are corrected to match the netlist.
+[04/08 15:45:10     27s] **WARN: (IMPSC-1138):	In scan chain "chain9_sub0" DEF ordered section, buffers or logics following scan instance "tiki_U37_reg_245" are corrected to match the netlist.
+[04/08 15:45:10     27s] **WARN: (IMPSC-1138):	In scan chain "chain10_sub0" DEF ordered section, buffers or logics following scan instance "tiki_U37_reg_251" are corrected to match the netlist.
+[04/08 15:45:10     27s] **WARN: (IMPSC-1138):	In scan chain "chain10_sub0" DEF ordered section, buffers or logics following scan instance "tiki_U37_reg_127" are corrected to match the netlist.
+[04/08 15:45:10     27s] **WARN: (IMPSC-1138):	In scan chain "chain10_sub0" DEF ordered section, buffers or logics following scan instance "U462_reg_7" are corrected to match the netlist.
+[04/08 15:45:10     27s] **WARN: (IMPSC-1138):	In scan chain "chain11_sub0" DEF ordered section, buffers or logics following scan instance "tiki_U37_reg_191" are corrected to match the netlist.
+[04/08 15:45:10     27s] **WARN: (IMPSC-1138):	In scan chain "chain11_sub0" DEF ordered section, buffers or logics following scan instance "tiki_U37_reg_62" are corrected to match the netlist.
+[04/08 15:45:10     27s] **WARN: (EMS-62):	Message <IMPSC-1138> has exceeded the default message display limit of 20.
+[04/08 15:45:10     27s] To avoid this warning, increase the display limit per unique message by
+[04/08 15:45:10     27s] using the set_message -limit <number> command.
+[04/08 15:45:10     27s] The message limit can be removed by using the set_message -no_limit command.
+[04/08 15:45:10     27s] Note that setting a very large number using the set_message -limit command
+[04/08 15:45:10     27s] or removing the message limit using the set_message -no_limit command can
+[04/08 15:45:10     27s] significantly increase the log file size.
+[04/08 15:45:10     27s] To suppress a message, use the set_message -suppress command.
+[04/08 15:45:10     27s] Successfully applied all DEF ordered sections.
+[04/08 15:45:10     27s] *** Scan Sanity Check Summary:
+[04/08 15:45:10     27s] *** 75 scan chains passed sanity check.
+[04/08 15:45:10     27s] save out the reporting file "scanChain.rpt"
+[04/08 15:48:06     38s] can't read "1file": no such variable
+[04/08 15:51:57     53s] **ERROR: (TCLCMD-923):	Specified argument 'file36' is not a valid collection
+**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'file36'
+[04/08 15:52:48     56s] **ERROR: (TCLCMD-917):	Cannot find 'pins, ports or nets' that match 'file36'
+**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'scan_in[0]'
+[04/08 16:00:31     85s] **ERROR: (TCLCMD-917):	Cannot find 'pins' that match 'scan_in[0]'
+**WARN: (TCLCMD-1205):	Cannot find 'pins or nets or library cells or design cells' that match ''.
+[04/08 16:00:31     85s] **ERROR: (TCLCMD-927):	Cannot find 'cells' for specified 'pins or nets or library cells or design cells'
+**ERROR: (USER-100):	Cannot find '' specified with 'get_attribute' command. (Line -1).
+
+**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'scan_in[1]'
+[04/08 16:00:31     85s] **ERROR: (TCLCMD-917):	Cannot find 'pins' that match 'scan_in[1]'
+**WARN: (TCLCMD-1205):	Cannot find 'pins or nets or library cells or design cells' that match ''.
+[04/08 16:00:31     85s] **ERROR: (TCLCMD-927):	Cannot find 'cells' for specified 'pins or nets or library cells or design cells'
+**ERROR: (USER-100):	Cannot find '' specified with 'get_attribute' command. (Line -1).
+
+**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'scan_in[2]'
+[04/08 16:00:31     85s] **ERROR: (TCLCMD-917):	Cannot find 'pins' that match 'scan_in[2]'
+**WARN: (TCLCMD-1205):	Cannot find 'pins or nets or library cells or design cells' that match ''.
+[04/08 16:00:31     85s] **ERROR: (TCLCMD-927):	Cannot find 'cells' for specified 'pins or nets or library cells or design cells'
+**ERROR: (USER-100):	Cannot find '' specified with 'get_attribute' command. (Line -1).
+
+**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'scan_in[3]'
+[04/08 16:00:31     85s] **ERROR: (TCLCMD-917):	Cannot find 'pins' that match 'scan_in[3]'
+**WARN: (TCLCMD-1205):	Cannot find 'pins or nets or library cells or design cells' that match ''.
+[04/08 16:00:31     85s] **ERROR: (TCLCMD-927):	Cannot find 'cells' for specified 'pins or nets or library cells or design cells'
+**ERROR: (USER-100):	Cannot find '' specified with 'get_attribute' command. (Line -1).
+
+**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'scan_in[4]'
+[04/08 16:00:31     85s] **ERROR: (TCLCMD-917):	Cannot find 'pins' that match 'scan_in[4]'
+**WARN: (TCLCMD-1205):	Cannot find 'pins or nets or library cells or design cells' that match ''.
+[04/08 16:00:31     85s] **ERROR: (TCLCMD-927):	Cannot find 'cells' for specified 'pins or nets or library cells or design cells'
+**ERROR: (USER-100):	Cannot find '' specified with 'get_attribute' command. (Line -1).
+
+**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'scan_in[5]'
+[04/08 16:00:31     85s] **ERROR: (TCLCMD-917):	Cannot find 'pins' that match 'scan_in[5]'
+**WARN: (TCLCMD-1205):	Cannot find 'pins or nets or library cells or design cells' that match ''.
+[04/08 16:00:31     85s] **ERROR: (TCLCMD-927):	Cannot find 'cells' for specified 'pins or nets or library cells or design cells'
+**ERROR: (USER-100):	Cannot find '' specified with 'get_attribute' command. (Line -1).
+
+**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'scan_in[6]'
+[04/08 16:00:31     85s] **ERROR: (TCLCMD-917):	Cannot find 'pins' that match 'scan_in[6]'
+**WARN: (TCLCMD-1205):	Cannot find 'pins or nets or library cells or design cells' that match ''.
+[04/08 16:00:31     85s] **ERROR: (TCLCMD-927):	Cannot find 'cells' for specified 'pins or nets or library cells or design cells'
+**ERROR: (USER-100):	Cannot find '' specified with 'get_attribute' command. (Line -1).
+
+**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'scan_in[7]'
+[04/08 16:00:31     85s] **ERROR: (TCLCMD-917):	Cannot find 'pins' that match 'scan_in[7]'
+**WARN: (TCLCMD-1205):	Cannot find 'pins or nets or library cells or design cells' that match ''.
+[04/08 16:00:31     85s] **ERROR: (TCLCMD-927):	Cannot find 'cells' for specified 'pins or nets or library cells or design cells'
+**ERROR: (USER-100):	Cannot find '' specified with 'get_attribute' command. (Line -1).
+
+**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'scan_in[8]'
+[04/08 16:00:31     85s] **ERROR: (TCLCMD-917):	Cannot find 'pins' that match 'scan_in[8]'
+**WARN: (TCLCMD-1205):	Cannot find 'pins or nets or library cells or design cells' that match ''.
+[04/08 16:00:31     85s] **ERROR: (TCLCMD-927):	Cannot find 'cells' for specified 'pins or nets or library cells or design cells'
+**ERROR: (USER-100):	Cannot find '' specified with 'get_attribute' command. (Line -1).
+
+**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'scan_in[9]'
+[04/08 16:00:31     85s] **ERROR: (TCLCMD-917):	Cannot find 'pins' that match 'scan_in[9]'
+**WARN: (TCLCMD-1205):	Cannot find 'pins or nets or library cells or design cells' that match ''.
+[04/08 16:00:31     85s] **ERROR: (TCLCMD-927):	Cannot find 'cells' for specified 'pins or nets or library cells or design cells'
+**ERROR: (USER-100):	Cannot find '' specified with 'get_attribute' command. (Line -1).
+
+**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'scan_in[10]'
+[04/08 16:00:31     85s] **ERROR: (TCLCMD-917):	Cannot find 'pins' that match 'scan_in[10]'
+**WARN: (TCLCMD-1205):	Cannot find 'pins or nets or library cells or design cells' that match ''.
+[04/08 16:00:31     85s] **ERROR: (TCLCMD-927):	Cannot find 'cells' for specified 'pins or nets or library cells or design cells'
+**ERROR: (USER-100):	Cannot find '' specified with 'get_attribute' command. (Line -1).
+
+**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'scan_in[11]'
+[04/08 16:00:31     85s] **ERROR: (TCLCMD-917):	Cannot find 'pins' that match 'scan_in[11]'
+**WARN: (TCLCMD-1205):	Cannot find 'pins or nets or library cells or design cells' that match ''.
+[04/08 16:00:31     85s] **ERROR: (TCLCMD-927):	Cannot find 'cells' for specified 'pins or nets or library cells or design cells'
+**ERROR: (USER-100):	Cannot find '' specified with 'get_attribute' command. (Line -1).
+
+**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'scan_in[12]'
+[04/08 16:00:31     85s] **ERROR: (TCLCMD-917):	Cannot find 'pins' that match 'scan_in[12]'
+**WARN: (TCLCMD-1205):	Cannot find 'pins or nets or library cells or design cells' that match ''.
+[04/08 16:00:31     85s] **ERROR: (TCLCMD-927):	Cannot find 'cells' for specified 'pins or nets or library cells or design cells'
+**ERROR: (USER-100):	Cannot find '' specified with 'get_attribute' command. (Line -1).
+
+**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'scan_in[13]'
+[04/08 16:00:31     85s] **ERROR: (TCLCMD-917):	Cannot find 'pins' that match 'scan_in[13]'
+**WARN: (TCLCMD-1205):	Cannot find 'pins or nets or library cells or design cells' that match ''.
+[04/08 16:00:31     85s] **ERROR: (TCLCMD-927):	Cannot find 'cells' for specified 'pins or nets or library cells or design cells'
+**ERROR: (USER-100):	Cannot find '' specified with 'get_attribute' command. (Line -1).
+
+**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'scan_in[14]'
+[04/08 16:00:31     85s] **ERROR: (TCLCMD-917):	Cannot find 'pins' that match 'scan_in[14]'
+**WARN: (TCLCMD-1205):	Cannot find 'pins or nets or library cells or design cells' that match ''.
+[04/08 16:00:31     85s] **ERROR: (TCLCMD-927):	Cannot find 'cells' for specified 'pins or nets or library cells or design cells'
+**ERROR: (USER-100):	Cannot find '' specified with 'get_attribute' command. (Line -1).
+
+**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'scan_in[15]'
+[04/08 16:00:31     85s] **ERROR: (TCLCMD-917):	Cannot find 'pins' that match 'scan_in[15]'
+**WARN: (TCLCMD-1205):	Cannot find 'pins or nets or library cells or design cells' that match ''.
+[04/08 16:00:31     85s] **ERROR: (TCLCMD-927):	Cannot find 'cells' for specified 'pins or nets or library cells or design cells'
+**ERROR: (USER-100):	Cannot find '' specified with 'get_attribute' command. (Line -1).
+
+**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'scan_in[16]'
+[04/08 16:00:31     85s] **ERROR: (TCLCMD-917):	Cannot find 'pins' that match 'scan_in[16]'
+**WARN: (TCLCMD-1205):	Cannot find 'pins or nets or library cells or design cells' that match ''.
+[04/08 16:00:31     85s] **ERROR: (TCLCMD-927):	Cannot find 'cells' for specified 'pins or nets or library cells or design cells'
+**ERROR: (USER-100):	Cannot find '' specified with 'get_attribute' command. (Line -1).
+
+**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'scan_in[17]'
+[04/08 16:00:31     85s] **ERROR: (TCLCMD-917):	Cannot find 'pins' that match 'scan_in[17]'
+**WARN: (TCLCMD-1205):	Cannot find 'pins or nets or library cells or design cells' that match ''.
+[04/08 16:00:31     85s] **ERROR: (TCLCMD-927):	Cannot find 'cells' for specified 'pins or nets or library cells or design cells'
+**ERROR: (USER-100):	Cannot find '' specified with 'get_attribute' command. (Line -1).
+
+**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'scan_in[18]'
+[04/08 16:00:31     85s] **ERROR: (TCLCMD-917):	Cannot find 'pins' that match 'scan_in[18]'
+**WARN: (TCLCMD-1205):	Cannot find 'pins or nets or library cells or design cells' that match ''.
+[04/08 16:00:31     85s] **ERROR: (TCLCMD-927):	Cannot find 'cells' for specified 'pins or nets or library cells or design cells'
+**ERROR: (USER-100):	Cannot find '' specified with 'get_attribute' command. (Line -1).
+
+Message <TCLCMD-513> has exceeded the message display limit of '20'. Use 'set_message -no_limit -id list_of_msgIDs' to reset the message limit.
+[04/08 16:00:31     85s] Message <TCLCMD-917> has exceeded the message display limit of '20'. Use 'set_message -no_limit -id list_of_msgIDs' to reset the message limit.
+[04/08 16:00:31     85s] **WARN: (TCLCMD-1205):	Cannot find 'pins or nets or library cells or design cells' that match ''.
+[04/08 16:00:31     85s] **ERROR: (TCLCMD-927):	Cannot find 'cells' for specified 'pins or nets or library cells or design cells'
+**ERROR: (USER-100):	Cannot find '' specified with 'get_attribute' command. (Line -1).
+
+Message <TCLCMD-1205> has exceeded the message display limit of '20'. Use 'set_message -no_limit -id list_of_msgIDs' to reset the message limit.
+[04/08 16:00:31     85s] Message <TCLCMD-927> has exceeded the message display limit of '20'. Use 'set_message -no_limit -id list_of_msgIDs' to reset the message limit.
+[04/08 16:00:31     85s] **ERROR: (USER-100):	Cannot find '' specified with 'get_attribute' command. (Line -1).
+
+**ERROR: (USER-100):	Cannot find '' specified with 'get_attribute' command. (Line -1).
+
+**ERROR: (USER-100):	Cannot find '' specified with 'get_attribute' command. (Line -1).
+
+**ERROR: (USER-100):	Cannot find '' specified with 'get_attribute' command. (Line -1).
+
+**ERROR: (USER-100):	Cannot find '' specified with 'get_attribute' command. (Line -1).
+
+**ERROR: (USER-100):	Cannot find '' specified with 'get_attribute' command. (Line -1).
+
+**ERROR: (USER-100):	Cannot find '' specified with 'get_attribute' command. (Line -1).
+
+**ERROR: (USER-100):	Cannot find '' specified with 'get_attribute' command. (Line -1).
+
+**ERROR: (USER-100):	Cannot find '' specified with 'get_attribute' command. (Line -1).
+
+**ERROR: (USER-100):	Cannot find '' specified with 'get_attribute' command. (Line -1).
+
+**ERROR: (USER-100):	Cannot find '' specified with 'get_attribute' command. (Line -1).
+
+**ERROR: (USER-100):	Cannot find '' specified with 'get_attribute' command. (Line -1).
+
+**ERROR: (USER-100):	Cannot find '' specified with 'get_attribute' command. (Line -1).
+
+**ERROR: (USER-100):	Cannot find '' specified with 'get_attribute' command. (Line -1).
+
+**ERROR: (USER-100):	Cannot find '' specified with 'get_attribute' command. (Line -1).
+
+**ERROR: (USER-100):	Cannot find '' specified with 'get_attribute' command. (Line -1).
+
+**ERROR: (USER-100):	Cannot find '' specified with 'get_attribute' command. (Line -1).
+
+**ERROR: (USER-100):	Cannot find '' specified with 'get_attribute' command. (Line -1).
+
+**ERROR: (USER-100):	Cannot find '' specified with 'get_attribute' command. (Line -1).
+
+**ERROR: (USER-100):	Cannot find '' specified with 'get_attribute' command. (Line -1).
+
+**ERROR: (USER-100):	Cannot find '' specified with 'get_attribute' command. (Line -1).
+
+**ERROR: (USER-100):	Cannot find '' specified with 'get_attribute' command. (Line -1).
+
+**ERROR: (USER-100):	Cannot find '' specified with 'get_attribute' command. (Line -1).
+
+**ERROR: (USER-100):	Cannot find '' specified with 'get_attribute' command. (Line -1).
+
+**ERROR: (USER-100):	Cannot find '' specified with 'get_attribute' command. (Line -1).
+
+**ERROR: (USER-100):	Cannot find '' specified with 'get_attribute' command. (Line -1).
+
+**ERROR: (USER-100):	Cannot find '' specified with 'get_attribute' command. (Line -1).
+
+**ERROR: (USER-100):	Cannot find '' specified with 'get_attribute' command. (Line -1).
+
+**ERROR: (USER-100):	Cannot find '' specified with 'get_attribute' command. (Line -1).
+
+**ERROR: (USER-100):	Cannot find '' specified with 'get_attribute' command. (Line -1).
+
+**ERROR: (USER-100):	Cannot find '' specified with 'get_attribute' command. (Line -1).
+
+**ERROR: (USER-100):	Cannot find '' specified with 'get_attribute' command. (Line -1).
+
+**ERROR: (USER-100):	Cannot find '' specified with 'get_attribute' command. (Line -1).
+
+**ERROR: (USER-100):	Cannot find '' specified with 'get_attribute' command. (Line -1).
+
+**ERROR: (USER-100):	Cannot find '' specified with 'get_attribute' command. (Line -1).
+
+**ERROR: (USER-100):	Cannot find '' specified with 'get_attribute' command. (Line -1).
+
+**ERROR: (USER-100):	Cannot find '' specified with 'get_attribute' command. (Line -1).
+
+**ERROR: (USER-100):	Cannot find '' specified with 'get_attribute' command. (Line -1).
+
+**ERROR: (USER-100):	Cannot find '' specified with 'get_attribute' command. (Line -1).
+
+**ERROR: (USER-100):	Cannot find '' specified with 'get_attribute' command. (Line -1).
+
+**ERROR: (USER-100):	Cannot find '' specified with 'get_attribute' command. (Line -1).
+
+**ERROR: (USER-100):	Cannot find '' specified with 'get_attribute' command. (Line -1).
+
+**ERROR: (USER-100):	Cannot find '' specified with 'get_attribute' command. (Line -1).
+
+**ERROR: (USER-100):	Cannot find '' specified with 'get_attribute' command. (Line -1).
+
+**ERROR: (USER-100):	Cannot find '' specified with 'get_attribute' command. (Line -1).
+
+**ERROR: (USER-100):	Cannot find '' specified with 'get_attribute' command. (Line -1).
+
+**ERROR: (USER-100):	Cannot find '' specified with 'get_attribute' command. (Line -1).
+
+**ERROR: (USER-100):	Cannot find '' specified with 'get_attribute' command. (Line -1).
+
+**ERROR: (USER-100):	Cannot find '' specified with 'get_attribute' command. (Line -1).
+
+**ERROR: (USER-100):	Cannot find '' specified with 'get_attribute' command. (Line -1).
+
+**ERROR: (USER-100):	Cannot find '' specified with 'get_attribute' command. (Line -1).
+
+**ERROR: (USER-100):	Cannot find '' specified with 'get_attribute' command. (Line -1).
+
+**ERROR: (USER-100):	Cannot find '' specified with 'get_attribute' command. (Line -1).
+
+**ERROR: (USER-100):	Cannot find '' specified with 'get_attribute' command. (Line -1).
+
+couldn't open "scanChain.ppt": no such file or directory
+[04/08 16:12:42    130s] wrong # args: no script following "[catch {
+            # 1) Get library cell type
+            set cell_type [get_attribute [get_cells $ff_inst] ref_name]
+            
+            # 2) Find SI pin driver
+            set si_pin "${ff_inst}/SI"
+            set drivers [all_fanin -startpoints_only -to $si_pin -flat]
+            set source [get_object_name [lindex $drivers 0]]
+            
+            # 3) Write results
+            puts $fout "$ff_inst  $cell_type  $source>"
+            incr ff_count
+            
+            if {$verbose} {
+                puts "  Chain $current_chain start FF: $ff_inst ($cell_type)"
+                puts "    SI driven by: $source"
+            }
+        } err]" argument
+[04/08 16:20:05    158s] **ERROR: (TCLCMD-923):	Specified argument '0x13c2' is not a valid collection
+**ERROR: (TCLCMD-923):	Specified argument '0x13c5' is not a valid collection
+**ERROR: (TCLCMD-923):	Specified argument '0x13c8' is not a valid collection
+**ERROR: (TCLCMD-923):	Specified argument '0x13cb' is not a valid collection
+**ERROR: (TCLCMD-923):	Specified argument '0x13ce' is not a valid collection
+**ERROR: (TCLCMD-923):	Specified argument '0x13d1' is not a valid collection
+**ERROR: (TCLCMD-923):	Specified argument '0x13d4' is not a valid collection
+**ERROR: (TCLCMD-923):	Specified argument '0x13d7' is not a valid collection
+**ERROR: (TCLCMD-923):	Specified argument '0x13da' is not a valid collection
+**ERROR: (TCLCMD-923):	Specified argument '0x13dd' is not a valid collection
+**ERROR: (TCLCMD-923):	Specified argument '0x13e0' is not a valid collection
+**ERROR: (TCLCMD-923):	Specified argument '0x13e3' is not a valid collection
+**ERROR: (TCLCMD-923):	Specified argument '0x13e6' is not a valid collection
+**ERROR: (TCLCMD-923):	Specified argument '0x13e9' is not a valid collection
+**ERROR: (TCLCMD-923):	Specified argument '0x13ec' is not a valid collection
+**ERROR: (TCLCMD-923):	Specified argument '0x13ef' is not a valid collection
+**ERROR: (TCLCMD-923):	Specified argument '0x13f2' is not a valid collection
+**ERROR: (TCLCMD-923):	Specified argument '0x13f5' is not a valid collection
+**ERROR: (TCLCMD-923):	Specified argument '0x13f8' is not a valid collection
+Message <TCLCMD-923> has exceeded the message display limit of '20'. Use 'set_message -no_limit -id list_of_msgIDs' to reset the message limit.
+[04/08 16:28:39    190s] missing close-bracket
