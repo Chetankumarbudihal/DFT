@@ -1,0 +1,15 @@
+set IP [remove_from_collection $IP clk]  
+set IP [all_inputs]
+
+foreach_in_collection P $IP {
++     set p_name [get_object_name $EP]
++     puts "input_ports: $p_name"
++     set fanout [all_fanout -endpoints_only -from $P]
++     foreach_in_collection x $fanout {
++         puts [get_object_name $x]
++     }
++ } > fouts 
+
+grep -B1 "/SI" fouts
+                      
+

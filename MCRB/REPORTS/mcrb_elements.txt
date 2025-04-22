@@ -1,0 +1,5 @@
+INSTS : {skew_addr_cntr_reg[0]}
+NETS : {skew_addr_cntr_o[0]}
+INSTS : {g468__8428}
+NETS : {n_10}
+NETS : {n_10}

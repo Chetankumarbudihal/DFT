@@ -1,0 +1,5 @@
+i_agg_su_count_a[31]===>f32_data_reg_0_/SI
+test_si1[0]===>f32_data_reg_11_/SI
+raw_scan_en===>f32_data_reg_11_/SI
+
+#raw_scan_en and test_si1[0] are connecting to same SI pin so there are only 2 scan chain
